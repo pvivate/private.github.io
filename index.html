@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Snek</title>
+		<link rel="stylesheet" type="text/css" href="styles1.css">
+
+		<script type="text/javascript">
+			var a = prompt("How old are you?");
+
+			if (a < 18) {
+				window.location.replace("404.html");
+			};
+
+			while (a > 70) {
+				alert("Old people like you don't play games!")
+				a = prompt("How old are you?");
+				if (a < 18) {
+					window.location.replace("404.html");
+				};
+				if (a < 70) {
+					break;
+				};
+			};
+
+			document.write('<center><h2 id="h2">' + `You are ${a} years old!` + '</h2></center>')
+			
+			/* $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+				console.log(JSON.stringify(data, null, 2));
+			}); */
+		</script>
+	</head>
+	
+	<body>
+		<center><h1><a href="secret.html" id="a1">Secret link</a></h1></center>
+		<center><h2 id="h2"></h2></center>
+
+
+	</body>
+</html>
